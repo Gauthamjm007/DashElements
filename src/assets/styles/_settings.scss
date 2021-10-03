@@ -139,7 +139,7 @@ body {
       $fontFamily: $fontPoppins,
       $size: $font14,
       $weight: $mediumFont,
-      $color: $black,
+      $color: $gray,
       $lineHeight: $lineHeight21
     );
   }
@@ -149,7 +149,7 @@ body {
       $fontFamily: $fontPoppins,
       $size: $font12,
       $weight: $regularFont,
-      $color: $black,
+      $color: $gray,
       $lineHeight: $lineHeight18
     );
   }
@@ -159,9 +159,22 @@ body {
       $fontFamily: $fontPoppins,
       $size: $font11,
       $weight: $regularFont,
-      $color: $black,
+      $color: $gray,
       $lineHeight: $lineHeight16
     );
+  }
+
+  .textLeft {
+    text-align: left;
+  }
+
+  .textRight {
+    text-align: right;
+  }
+
+  .flexCentered {
+    display: flex;
+    align-items: center;
   }
 
   .primaryBtn {

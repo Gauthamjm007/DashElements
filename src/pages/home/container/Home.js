@@ -1,5 +1,9 @@
-import React from "react";
-
+import styles from "../../../assets/styles/home.module.scss";
+import Stats from "../components/Stats";
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <section className={styles.homeSection}>
+      <Stats />
+    </section>
+  );
 }

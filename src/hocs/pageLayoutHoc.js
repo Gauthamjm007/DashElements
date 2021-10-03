@@ -1,15 +1,18 @@
-import React from "react";
-
 import { withRouter } from "react-router-dom";
+import { Container } from "@mui/material";
+import { Header, Navigation } from "../shared_elements";
 
 export default function pageLayoutHoc(HocComponent, extraProps = {}) {
   function PageLayout() {
     return (
       <>
+        <div className="mainBg" />
         <main>
-          <div>
+          <Container maxWidth="lg">
+            <Header />
+            <Navigation />
             <HocComponent {...extraProps} />
-          </div>
+          </Container>
         </main>
       </>
     );

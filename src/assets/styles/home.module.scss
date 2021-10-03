@@ -1,0 +1,51 @@
+@import "variable";
+
+body {
+  .homeSection {
+    padding-bottom: 44px;
+    width: 100%;
+  }
+
+  .earningWrapper {
+    padding: 24px 24px 32px;
+
+    height: 100%;
+
+    .currencyWrapper {
+      display: flex;
+      align-items: center;
+      span {
+        color: $gray;
+        font-weight: $regularFont;
+
+        &.rankIcon {
+          margin-right: 8px;
+          background-color: $dark_blue;
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+
+    .topCategories {
+      margin-top: 20px;
+      padding: 20px 0 0;
+      border-top: 1px solid $borderColor;
+
+      p {
+        padding-bottom: 16px;
+      }
+    }
+
+    .progressWrapper {
+      b {
+        color: $green;
+        font-weight: $regularFont;
+      }
+    }
+  }
+}

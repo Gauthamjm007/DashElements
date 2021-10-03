@@ -1,5 +1,6 @@
 $fontPoppins: "Poppins", sans-serif;
 
+$lightFont: 300;
 $regularFont: 400;
 $mediumFont: 500;
 $semiBold: 600;
@@ -44,10 +45,11 @@ $borderColor: #e6ebf0;
 
 $green: #10c176;
 $dark_purple: #6574d6;
+$dark_blue: #4c5ebb;
 $purple: #6271d2;
 $orange: #d28e62;
 $white: #ffffff;
-
+$gray_dark: #8d99a4;
 @mixin fontStyle(
   $fontFamily: null,
   $size: null,

@@ -1,16 +1,16 @@
-import chevron from "../assets/chevron.svg";
-import dollar from "../assets/dollar.svg";
-import arrow from "../assets/arrow.svg";
-import code from "../assets/code.svg";
-import logo from "../assets/logo.svg";
-import notification from "../assets/notification.svg";
-import profile1 from "../assets/profile1.svg";
-import profile2 from "../assets/profile2.svg";
-import profile3 from "../assets/profile3.svg";
-import profile4 from "../assets/profile4.svg";
-import project from "../assets/project.svg";
-import rank from "../assets/rank.svg";
-import slack from "../assets/slack.svg";
+import chevron from "../assets/img/chevron.svg";
+import dollar from "../assets/img/dollar.svg";
+import arrow from "../assets/img/arrow.svg";
+import code from "../assets/img/code.svg";
+import logo from "../assets/img/logo.svg";
+import notification from "../assets/img/notification.svg";
+import profile1 from "../assets/img/profile1.png";
+import profile2 from "../assets/img/profile2.png";
+import profile3 from "../assets/img/profile3.png";
+import profile4 from "../assets/img/profile4.png";
+import project from "../assets/img/project.svg";
+import rank from "../assets/img/rank.svg";
+import slack from "../assets/img/slack.svg";
 
 export const images = {
   chevron,
