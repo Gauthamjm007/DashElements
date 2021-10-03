@@ -1,0 +1,14 @@
+@import "variable";
+
+body {
+  main {
+    > div {
+      padding: 0px 0px 0px 0px;
+    }
+  }
+
+  .disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+}

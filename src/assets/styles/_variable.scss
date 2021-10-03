@@ -1,0 +1,89 @@
+$fontPoppins: "Poppins", sans-serif;
+
+$regularFont: 400;
+$mediumFont: 500;
+$semiBold: 600;
+$boldFont: 700;
+
+$smallLS: 0.25px;
+$mediumLS: 0.75px;
+$regularLS: 1px;
+$largeLS: 1.25px;
+$extraLargeLS: 1.5px;
+$giantLS: 1.75px;
+
+$font30: 30px;
+$font24: 24px;
+$font20: 20px;
+$font18: 18px;
+$font16: 16px;
+$font15: 15px;
+$font14: 14px;
+$font12: 12px;
+$font11: 11px;
+
+$lineHeight45: 45px;
+$lineHeight30: 30px;
+$lineHeight28: 28px;
+$lineHeight25: 25px;
+$lineHeight24: 24px;
+$lineHeight21: 21px;
+$lineHeight19: 19px;
+$lineHeight18: 18px;
+$lineHeight16: 16px;
+$lineHeight15: 15px;
+
+$black: #42505c;
+$gray: #79828b;
+$bg_start: #6a79dd;
+$bg_end: #5866c3;
+$primay_bg: linear-gradient(201.71deg, #8f9df8 -80.88%, #92a0ff 203.65%);
+$gray_bg: linear-gradient(136.05deg, #f5f7fa 1.07%, #f4f6f8 99.3%);
+
+$borderColor: #e6ebf0;
+
+$green: #10c176;
+$dark_purple: #6574d6;
+$purple: #6271d2;
+$orange: #d28e62;
+$white: #ffffff;
+
+@mixin fontStyle(
+  $fontFamily: null,
+  $size: null,
+  $weight: null,
+  $color: null,
+  $lineHeight: null,
+  $margin: null,
+  $padding: null
+) {
+  @if $fontFamily != null {
+    font-family: $fontFamily;
+  }
+  @if $size != null {
+    font-size: $size;
+  }
+  @if $weight != null {
+    font-weight: $weight;
+  }
+  @if $color != null {
+    color: $color;
+  }
+  @if $lineHeight != null {
+    line-height: $lineHeight;
+  }
+  @if $margin != null {
+    margin: $margin;
+  }
+  @if $padding != null {
+    padding: $padding;
+  }
+}
+
+@mixin transitionForAll($time: 0.3s, $transProp: ease) {
+  -webkit-transition: all $time $transProp;
+  -moz-transition: all $time $transProp;
+  -o-transition: all $time $transProp;
+  transition: all $time $transProp;
+  transition: all $time $transProp;
+}
