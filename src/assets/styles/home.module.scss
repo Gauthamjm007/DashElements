@@ -6,6 +6,10 @@ body {
     width: 100%;
   }
 
+  .statsWrapper {
+    padding-bottom: 44px;
+  }
+
   .earningWrapper {
     padding: 24px 24px 32px;
 
@@ -45,6 +49,27 @@ body {
       b {
         color: $green;
         font-weight: $regularFont;
+      }
+    }
+  }
+
+  .suggestedProjectsWrapper {
+    .suggestedProjectsHeader {
+      padding-bottom: 20px;
+    }
+
+    .suggestedProjectsList {
+      .suggestedProjectCard {
+        padding: 24px 24px;
+        .description {
+          margin: 16px 0px 22px;
+          font-weight: $regularFont;
+        }
+
+        .bottomInfo {
+          border-top: 1px solid $borderColor;
+          padding-top: 16px;
+        }
       }
     }
   }

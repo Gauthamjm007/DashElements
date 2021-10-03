@@ -5,7 +5,7 @@ import { Tags } from "../../../shared_ui_components";
 
 export default function Stats() {
   return (
-    <div>
+    <div className={styles.statsWrapper}>
       <Grid container spacing={3} direction="row" alignItems="stretch">
         <Grid item xs={8}>
           <div className={`cardBg ${styles.earningWrapper}`}>
@@ -83,7 +83,7 @@ export default function Stats() {
             </Stack>
             <div className={` ${styles.topCategories}`}>
               <p className="subtext">TOP CATEGORIES</p>
-              <Stack direction="row" spacing={1}>
+              <Stack direction="row" spacing={"12px"}>
                 <Tags value="ruby" />
                 <Tags value="clojure" />
                 <Tags value="java" />
