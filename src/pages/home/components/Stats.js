@@ -13,7 +13,7 @@ export default function Stats() {
               <Grid item xs={4}>
                 <Stack direction="column" spacing={3}>
                   <span>
-                    <p className="subtext">EARNINGS</p>
+                    <h6 className="subtext">EARNINGS</h6>
                   </span>
                   <span>
                     <Stack direction="column">
@@ -43,7 +43,7 @@ export default function Stats() {
               <div>
                 <Stack direction="column" spacing={2}>
                   <span>
-                    <p className="subtext">RANK</p>
+                    <h6 className="subtext">RANK</h6>
                   </span>
                   <span>
                     <Stack direction="column">
@@ -63,7 +63,7 @@ export default function Stats() {
               <div>
                 <Stack direction="column" spacing={2} alignItems="flex-end">
                   <span>
-                    <p className="subtext">PROJECTS</p>
+                    <h6 className="subtext">PROJECTS</h6>
                   </span>
                   <span>
                     <Stack direction="column" alignItems="flex-end">
@@ -82,7 +82,7 @@ export default function Stats() {
               </div>
             </Stack>
             <div className={` ${styles.topCategories}`}>
-              <p className="subtext">TOP CATEGORIES</p>
+              <p className={`subtext ${styles.header}`}>TOP CATEGORIES</p>
               <Stack direction="row" spacing={"12px"}>
                 <Tags value="ruby" />
                 <Tags value="clojure" />

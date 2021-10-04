@@ -64,6 +64,16 @@ body {
     box-sizing: border-box;
   }
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0px;
+    padding: 0px;
+  }
+
   .heading1 {
     @include fontStyle(
       $fontFamily: $fontPoppins,
@@ -195,11 +205,12 @@ body {
     border: none;
     cursor: pointer;
     border-radius: 6px;
-    text-transform: capitalize;
+    text-transform: uppercase;
     width: max-content;
     &:hover,
     &:focus,
     &:active {
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
       @include transitionForAll($time: 0.3s, $transProp: ease-in);
       outline: none;
     }
@@ -217,9 +228,11 @@ body {
       $color: $white,
       $lineHeight: $lineHeight15
     );
-    background: $white;
+    letter-spacing: $giantLS;
+    background: transparent;
     @include transitionForAll($time: 0.4s, $transProp: ease-out);
     padding: 12px 24px;
+    text-transform: uppercase;
     border: 1px solid $white;
     text-align: center;
     display: inline-block;
@@ -229,6 +242,7 @@ body {
     &:hover,
     &:focus,
     &:active {
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
       @include transitionForAll($time: 0.3s, $transProp: ease-in);
     }
     &.disabledBtn {

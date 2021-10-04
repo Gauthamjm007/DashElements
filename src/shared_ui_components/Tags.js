@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Tags({ type = "default", value }) {
   const CRYPTO_TYPES = ["btc", "eth"];
   return (

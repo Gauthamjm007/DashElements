@@ -7,9 +7,9 @@ export default function pageLayoutHoc(HocComponent, extraProps = {}) {
     return (
       <>
         <div className="mainBg" />
+        <Header />
         <main>
           <Container maxWidth="lg">
-            <Header />
             <Navigation />
             <HocComponent {...extraProps} />
           </Container>

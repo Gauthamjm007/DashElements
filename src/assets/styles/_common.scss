@@ -13,8 +13,14 @@ body {
   }
 
   header {
-    padding: 36px 0px;
-
+    margin: 16px 0px 16px 0;
+    padding: 16px 0;
+    z-index: 999;
+    width: 100%;
+    background: $dark_purple;
+    background: $primay_bg;
+    position: sticky;
+    top: 0px;
     .logoBox {
       display: flex;
       align-items: center;
@@ -46,7 +52,7 @@ body {
   }
 
   .mainBg {
-    position: fixed;
+    position: absolute;
     left: 0px;
     top: 0px;
     z-index: 9;
@@ -125,6 +131,7 @@ body {
     max-width: fit-content;
     border-radius: 16px;
     text-transform: uppercase;
+    display: inline;
     &.eth {
       background-color: rgba(98, 113, 210, 0.1);
       color: $dark_blue;
@@ -139,6 +146,12 @@ body {
       background-color: rgba(121, 130, 139, 0.1);
       color: $gray_dark;
       text-transform: lowercase;
+    }
+  }
+
+  .userProfileWrapper {
+    & > div {
+      width: 100%;
     }
   }
 }
