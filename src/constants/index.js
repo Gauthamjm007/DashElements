@@ -11,11 +11,15 @@ import profile4 from "../assets/img/profile4.png";
 import project from "../assets/img/project.svg";
 import rank from "../assets/img/rank.svg";
 import slack from "../assets/img/slack.svg";
+import codeCircle from "../assets/img/code_circle.svg";
+import dollarCircle from "../assets/img/dollar_circle.svg";
 
 export const images = {
   chevron,
   dollar,
   arrow,
+  codeCircle,
+  dollarCircle,
   code,
   logo,
   notification,
