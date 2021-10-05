@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/DashElements/static/css/main.67ce5f73.chunk.css",
+    "main.js": "/DashElements/static/js/main.f3c74068.chunk.js",
+    "main.js.map": "/DashElements/static/js/main.f3c74068.chunk.js.map",
+    "runtime-main.js": "/DashElements/static/js/runtime-main.c458bf19.js",
+    "runtime-main.js.map": "/DashElements/static/js/runtime-main.c458bf19.js.map",
+    "static/js/2.45b4ebb5.chunk.js": "/DashElements/static/js/2.45b4ebb5.chunk.js",
+    "static/js/2.45b4ebb5.chunk.js.map": "/DashElements/static/js/2.45b4ebb5.chunk.js.map",
+    "static/js/3.0d438ec8.chunk.js": "/DashElements/static/js/3.0d438ec8.chunk.js",
+    "static/js/3.0d438ec8.chunk.js.map": "/DashElements/static/js/3.0d438ec8.chunk.js.map",
+    "index.html": "/DashElements/index.html",
+    "static/css/main.67ce5f73.chunk.css.map": "/DashElements/static/css/main.67ce5f73.chunk.css.map",
+    "static/js/2.45b4ebb5.chunk.js.LICENSE.txt": "/DashElements/static/js/2.45b4ebb5.chunk.js.LICENSE.txt",
+    "static/media/arrow.e12b09ba.svg": "/DashElements/static/media/arrow.e12b09ba.svg",
+    "static/media/chevron.67ab11d7.svg": "/DashElements/static/media/chevron.67ab11d7.svg",
+    "static/media/code.ac11644b.svg": "/DashElements/static/media/code.ac11644b.svg",
+    "static/media/code_circle.6598ea08.svg": "/DashElements/static/media/code_circle.6598ea08.svg",
+    "static/media/dollar.d9248f53.svg": "/DashElements/static/media/dollar.d9248f53.svg",
+    "static/media/dollar_circle.5151ea02.svg": "/DashElements/static/media/dollar_circle.5151ea02.svg",
+    "static/media/logo.071c4276.svg": "/DashElements/static/media/logo.071c4276.svg",
+    "static/media/notification.05ecb211.svg": "/DashElements/static/media/notification.05ecb211.svg",
+    "static/media/project.f2156d59.svg": "/DashElements/static/media/project.f2156d59.svg",
+    "static/media/rank.3c27987c.svg": "/DashElements/static/media/rank.3c27987c.svg",
+    "static/media/sandwitch.4a99b3a3.svg": "/DashElements/static/media/sandwitch.4a99b3a3.svg",
+    "static/media/slack.ed75dee5.svg": "/DashElements/static/media/slack.ed75dee5.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c458bf19.js",
+    "static/js/2.45b4ebb5.chunk.js",
+    "static/css/main.67ce5f73.chunk.css",
+    "static/js/main.f3c74068.chunk.js"
+  ]
+}
