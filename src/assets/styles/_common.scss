@@ -21,6 +21,10 @@ body {
     background: $primay_bg;
     position: sticky;
     top: 0px;
+
+    .menuIcon {
+      margin-right: 8px;
+    }
     .logoBox {
       display: flex;
       align-items: center;

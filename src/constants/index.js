@@ -13,6 +13,7 @@ import rank from "../assets/img/rank.svg";
 import slack from "../assets/img/slack.svg";
 import codeCircle from "../assets/img/code_circle.svg";
 import dollarCircle from "../assets/img/dollar_circle.svg";
+import sandWitch from "../assets/img/sandwitch.svg";
 
 export const images = {
   chevron,
@@ -30,4 +31,5 @@ export const images = {
   project,
   rank,
   slack,
+  sandWitch,
 };

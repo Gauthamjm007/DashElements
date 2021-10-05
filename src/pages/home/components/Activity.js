@@ -104,7 +104,7 @@ export default function Activity() {
       direction="row"
       justifyContent="stretch"
     >
-      <Grid item xs={8}>
+      <Grid item md={8} sm={12} xs={12}>
         <InfoHeader
           title={"Activity"}
           route={{ label: "VIEW ALL ACTIVITY", path: "/" }}
@@ -163,7 +163,8 @@ export default function Activity() {
                           </div>
                         </Stack>
                       </Grid>
-                      <Grid item>
+
+                      <Grid item sx={{ display: { xs: "none", md: "block" } }}>
                         <p className="subtitle"> {item.user.lastActivity}</p>
                       </Grid>
                     </Grid>
@@ -174,7 +175,7 @@ export default function Activity() {
           </div>
         </div>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item md={4} sm={12} xs={12}>
         <InfoHeader
           title={"Top Earners"}
           route={{ label: "VIEW ALL", path: "/" }}

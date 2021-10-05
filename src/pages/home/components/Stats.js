@@ -1,19 +1,37 @@
-import { Grid, Stack } from "@mui/material";
+import { Grid, Stack, Box } from "@mui/material";
 import styles from "../../../assets/styles/home.module.scss";
 import { images } from "../../../constants";
-import { Tags } from "../../../shared_ui_components";
+import { Tags, LineGraph } from "../../../shared_ui_components";
+
+const GRAPH_DATA = [
+  { y: "Mar", x: 180 },
+  { y: "May", x: 200 },
+  { y: "Jul", x: 220 },
+  { y: "Sep", x: 140 },
+  { y: "Nov", x: 200 },
+  { y: "Jan", x: 250 },
+];
 
 export default function Stats() {
   return (
     <div className={styles.statsWrapper}>
       <Grid container spacing={3} direction="row" alignItems="stretch">
-        <Grid item xs={8}>
+        <Grid item md={8} sm={12} xs={12}>
           <div className={`cardBg ${styles.earningWrapper}`}>
-            <Grid container spacing={2}>
-              <Grid item xs={4}>
-                <Stack direction="column" spacing={3}>
+            <Box sx={{ display: { xs: "inline-flex", md: "none" } }}>
+              <h6 className="subtext">EARNINGS</h6>
+            </Box>
+            <Grid
+              container
+              spacing={2}
+              direction={{ xs: "column-reverse", md: "row" }}
+            >
+              <Grid item md={3} xs={12}>
+                <Stack direction={{ xs: "row", sm: "column" }} spacing={3}>
                   <span>
-                    <h6 className="subtext">EARNINGS</h6>
+                    <Box sx={{ display: { xs: "none", md: "inline-flex" } }}>
+                      <h6 className="subtext">EARNINGS</h6>
+                    </Box>
                   </span>
                   <span>
                     <Stack direction="column">
@@ -26,18 +44,23 @@ export default function Stats() {
                     </Stack>
                   </span>
                   <span>
-                    <Stack direction="column" spacing={"12px"}>
+                    <Stack
+                      direction={{ xs: "row", sm: "column" }}
+                      spacing={"12px"}
+                    >
                       <Tags type="eth" value={"0.9087"} />
                       <Tags type="btc" value={"0.5"} />
                     </Stack>
                   </span>
                 </Stack>
               </Grid>
-              <Grid item xs={8}></Grid>
+              <Grid item md={9} xs={12}>
+                <LineGraph data={GRAPH_DATA} />
+              </Grid>
             </Grid>
           </div>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item md={4} sm={12} xs={12}>
           <div className={`cardBg ${styles.earningWrapper}`}>
             <Stack direction="row" justifyContent="space-between">
               <div>

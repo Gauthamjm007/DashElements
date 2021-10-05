@@ -12,7 +12,7 @@ export default function Header() {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Grid item xs={6}>
+          <Grid item md={6} sx={{ display: { xs: "none", md: "inline-flex" } }}>
             <ul className="listInline logoBox">
               <li className="listInlineItem mr8">
                 <img src={images.logo} alt="logo" />
@@ -25,7 +25,17 @@ export default function Header() {
               </li>
             </ul>
           </Grid>
-          <Grid item xs={6} className={"textRight"}>
+          <Grid item md={6} sx={{ display: { xs: "inline-flex", md: "none" } }}>
+            <ul className="listInline logoBox">
+              <li className="listInlineItem">
+                <img src={images.sandWitch} alt="logo" className="menuIcon" />
+              </li>
+              <li className="listInlineItem mr8">
+                <img src={images.logo} alt="logo" />
+              </li>
+            </ul>
+          </Grid>
+          <Grid item md={6} className={"textRight"}>
             <Grid
               container
               spacing={4}
@@ -33,7 +43,7 @@ export default function Header() {
               alignItems="center"
               justifyContent="flex-end"
             >
-              <Grid item>
+              <Grid item sx={{ display: { xs: "none", md: "inline-flex" } }}>
                 <Notification count={3} />
               </Grid>
               <Grid item>

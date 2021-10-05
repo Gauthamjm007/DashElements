@@ -83,7 +83,7 @@ export default function SuggestedProjects() {
       <div className={styles.suggestedProjectsList}>
         <Grid container spacing={3}>
           {USER_SUGGESTIONS.map((item) => (
-            <Grid item xs={4}>
+            <Grid item md={4} sm={6} xs={12}>
               <div className={`${styles.suggestedProjectCard} cardBg`}>
                 <Stack direction="row" justifyContent="space-between" mb="10px">
                   <div>
